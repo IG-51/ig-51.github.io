@@ -1,4 +1,4 @@
 # ig-51.github.io
 Мои проекты:
 
-/WebDesignGoPro
+ig-51.github.io/WebDesignGoPro
