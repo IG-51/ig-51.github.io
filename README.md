@@ -1,4 +1,4 @@
 # ig-51.github.io
 Мои проекты:
 
-[WebDesignGoPro](https://ig-51.github.io/WebDesignGoPro/){:target="_blank"}
+[WebDesignGoPro](https://ig-51.github.io/WebDesignGoPro/)
