@@ -1,3 +1,4 @@
 # ig-51.github.io
-Мои проекты.
-[WebDesignGoPro](https://ig-51.github.io/WebDesignGoPro/)
+Мои проекты:
+
+[WebDesignGoPro](https://ig-51.github.io/WebDesignGoPro/){:target="_blank"}
