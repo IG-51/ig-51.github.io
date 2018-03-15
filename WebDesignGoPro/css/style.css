@@ -4,11 +4,15 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
 /* ==============================  
 общие стили 
 ============================== */
+* {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
 	background-color: #fff;
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -31,6 +35,11 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 h2 {
 	max-width: 300px;
@@ -144,6 +153,9 @@ banner
 .banner__content {
 	position: absolute;
 	top: 44%;
+  -webkit-transform: translateY(-44%);
+  -ms-transform: translateY(-44%);
+  transform: translateY(-44%); 
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
