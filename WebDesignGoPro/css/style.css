@@ -1047,7 +1047,7 @@ btnback
   .btnback {
     z-index: 999;
     background-color: silver;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     border-radius: 0 50px 50px 0;
