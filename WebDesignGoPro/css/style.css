@@ -82,6 +82,37 @@ p.heading {
 }
 /* ----- end общие стили ----- */
 
+/* ----- end btnback ----- */
+
+
+/* ==============================  
+btnback
+============================== */
+  .btnback {
+    background-color: silver;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 0 50px 50px 0;
+    top: 0;
+    left: 0;
+  }
+  .btnback a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+  }
+  .btnback:hover {
+    background:  #999999;
+    box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+    transition: .3s ease;
+  }
+  .btnback a:hover {
+    color: white;
+    transition: .3s ease;
+  }
 /* ==============================  
 header
 ============================== */
