@@ -99,6 +99,7 @@ btnback
     left: 0;
   }
   .btnback a {
+    z-index: 999;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
