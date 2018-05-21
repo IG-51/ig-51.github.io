@@ -89,6 +89,7 @@ p.heading {
 btnback
 ============================== */
   .btnback {
+    index: 999;
     background-color: silver;
     position: absolute;
     cursor: pointer;
