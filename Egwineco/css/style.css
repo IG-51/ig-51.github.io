@@ -1,0 +1,424 @@
+/* fonts */
+@font-face {
+  font-family: Heavitas;
+  src: url(../fonts/heavitas.woff); 
+ }
+ @font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-SemiBold.ttf); 
+ }
+
+
+/* reset styles */ 
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* common styles */
+.section {
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg_left {
+  left: 0;
+}
+.bg_right {
+  right: 0;
+}
+.bg::after {
+  content: '';
+  background: transparent url(../img/lineTextureBgOverlay.png) 50%/7px auto repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.content {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+.content_right {
+  right: 0;
+  padding-left: 11%;
+}
+.content_left {
+  left: 0;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.heading {
+  color: #424242;
+  font-weight: 700;
+  text-transform: uppercase;
+  font: normal normal 4vw/1.1 Heavitas,Arial Black,Helvetica,sans-serif;
+  letter-spacing: .01em;
+  margin: 0 0 5px;
+  padding: 0;
+}
+.overflowInner {
+  display: block;
+}
+.period {
+  display: none;
+}
+.subtitle {
+  text-transform: uppercase;
+  font: normal normal 23px/1.1 Heavitas,Arial Black,Helvetica,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 10px;
+  outline: none;
+  padding: 8px 10px 8px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font: 600 normal 14px/1.4 "Open Sans",Helvetica,Arial,sans-serif;
+  letter-spacing: .12em;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: background-position .2s linear,padding .2s linear,background-color .2s;
+  margin-top: 20px;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  height: 100%;
+  width: 25px;
+  top: 0;
+  background-image: url(../img/buttonArrowLine.png),url(../img/buttonArrowEnd.png);
+  background-position: 0,calc(100% - 10px) 50%;
+  background-size: 7px 10px,13px 10px;
+  background-repeat: no-repeat;
+  border-radius: 0 10px 10px 0;
+  transition: width .2s,background-color .2s;
+}
+.button:hover::after {
+  width: 30px;
+}
+.can {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+  background-attachment: fixed;
+}
+.arrowDown {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent url(../img/arrowDown.png) center 50%/10px auto no-repeat;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%);
+  z-index: 4;
+}
+.arrowDown:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/* chardonnay */
+.chardonnay {
+  background-color: #00b4b1;
+}
+.chardonnay__bg {
+  background-image: url(../img/bgChardonnay.jpg);
+}
+.chardonnay__can {
+  background-image: url(../img/canChardonnay.png);
+}
+.chardonnay__heading {
+  color: #f9e093;
+}
+.chardonnay__subtitle {
+  color: #00908e;
+}
+.chardonnay__button,
+.chardonnay__button::after {
+  background-color: #00908e;
+}
+.chardonnay__button:hover,
+.chardonnay__button:hover::after {
+  background-color: #007775;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* red wine */
+.redWine {
+  background-color: #b11f24;
+}
+.redWine__bg {
+  background-image: url(../img/bgRedWine.jpg);
+}
+.redWine__can {
+  background-image: url(../img/canRedWine.png);
+}
+.redWine__heading {
+  color: #9cd5c4;
+}
+.redWine__subtitle {
+  color: #7d1619;
+}
+.redWine__button,
+.redWine__button::after {
+  background-color: #7d1619;
+}
+.redWine__button:hover,
+.redWine__button:hover::after {
+  background-color: #671215;
+}
+
+/* rose wine */
+.roseWine {
+  background-color: #243f93;
+}
+.roseWine__bg {
+  background-image: url(../img/bgRoseWine.jpg);
+}
+.roseWine__can {
+  background-image: url(../img/canRoseWine.png);
+}
+
+.roseWine__heading {
+  color: #f3896f;
+}
+.roseWine__subtitle {
+  color: #162559;
+}
+.roseWine__button,
+.roseWine__button::after {
+  background-color: #162559;
+}
+.roseWine__button:hover,
+.roseWine__button:hover::after {
+  background-color: #111d44;
+}
+
+
+/* sauvignon blanc */
+.sauvignonBlanc {
+  background-color: #74a345;
+}
+.sauvignonBlanc__bg {
+  background-image: url(../img/bgSauvignonBlanc.jpg);
+}
+.sauvignonBlanc__can {
+  background-image: url(../img/canSauvignonBlanc.png);
+}
+.sauvignonBlanc__heading {
+  color: #c2e8fb;
+}
+.sauvignonBlanc__subtitle {
+  color: #537431;
+}
+.sauvignonBlanc__button,
+.sauvignonBlanc__button::after {
+  background-color: #5d8237;
+}
+.sauvignonBlanc__button:hover,
+.sauvignonBlanc__button:hover::after {
+  background-color: #50702f;
+}
+
+/* bubbles */
+.bubbles {
+  background-color: #1d1e1e;
+}
+.bubbles__bg {
+  background-image: url(../img/bgBubbles.jpg);
+}
+.bubbles__can {
+  background-image: url(../img/canBubbles.png);
+}
+
+.bubbles__heading {
+  color: #e1d169;
+}
+.bubbles__overflowInner_1 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(transparent,transparent),linear-gradient(180deg,#f3a083 0,#edbd76);
+  background-repeat: repeat,repeat;
+  background-size: cover,cover;
+  -webkit-background-clip: text;
+}
+.bubbles__overflowInner_2 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(transparent,transparent),linear-gradient(180deg,#e8cd68 0,#ccd277);
+  background-repeat: repeat,repeat;
+  background-size: cover,cover;
+  -webkit-background-clip: text;
+}
+.bubbles__overflowInner_3 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(transparent,transparent),linear-gradient(180deg,#b9d382 0,#9dd29e);
+  background-repeat: repeat,repeat;
+  background-size: cover,cover;
+  -webkit-background-clip: text;
+}
+.bubbles__subtitle {
+  color: #61897f;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(transparent,transparent),linear-gradient(180deg,#63897b 0,#5f8983);
+  background-repeat: repeat,repeat;
+  background-size: cover,cover;
+  -webkit-background-clip: text;
+}
+.bubbles__button,
+.bubbles__button::after {
+  background-color: #366660;
+}
+.bubbles__button:hover,
+.bubbles__button:hover::after {
+  background-color: #2d5550
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 1500px) {
+  .can {
+    background-size: 700px auto;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .can {
+    background-attachment: scroll;
+  }
+  .can_left {
+    left: -25%;
+  }
+  .can_right {
+    right: -25%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .heading {
+    font-size: 40px;
+}
+  .subtitle {
+    font-size: 18px;
+}
+}
+@media only screen and (max-width: 767px) {
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    padding: 0 10%;
+  }
+  .can_left {
+    left: 0;
+  }  
+  .can_right {
+    right: 0;
+  }
+  .can {
+    width: 100%;
+    height: 75%;
+    background-size: auto 100%;
+    background-position: center top 0;
+  }
+  .heading {
+    font-size: 30px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    display: block;
+  }
+  .overflowInner {
+    display: inline-block;
+    padding: 4px 0;
+  }
+  .overflowInner_last {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  .button {
+    margin-left: -25px;
+  }
+  .period {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .overflowInner {
+    padding: 2px 0;
+  }
+  .subtitle {
+    font-size: 15px;
+}
+}
