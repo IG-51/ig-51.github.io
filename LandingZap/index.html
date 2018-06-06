@@ -28,7 +28,7 @@
         <br class="landingZap__br"> Of Your Visitors</h1>
       <p class="landingZap__paragraph">It takes 5 seconds for your website visitors to make an impression of you.
         <br class="landingZap__br"> We just want to make sure they say 'Wow!'</p>
-      <a href="javascript: void(0)" class="buttonGet landingZap__button">Get your landing page now</a>
+        <a href="#" class="buttonGet landingZap__button go">Get your landing page now</a>
       <div class="landingZap__imgWrapper">
         <img src="img/landingZapNotebooks.png" alt="img" class="landingZap__imgNotebooks">
       </div>
@@ -129,7 +129,7 @@
               <br> for your online business through great design.</p>
           </div>
         </div>
-        <a href="javascript: void(0)" class="buttonGet workWithUs__button">Get your landing page now</a>
+        <a href="#" class="buttonGet workWithUs__button go">Get your landing page now</a>
       </div>
     </div>
   </section>
@@ -181,13 +181,29 @@
   <section class="areYouReady">
     <div class="wrapper">
       <h2 class="headingH1H2 areYouReady__heading">Are You Ready To Get The Best Landing Page Design Ever?</h2>
-      <a href="javascript: void(0)" class="buttonGet areYouReady__button">Get your landing page now</a>
+      <a href="#" class="buttonGet areYouReady__button go">Get your landing page now</a>
       <div class="areYouReady__imgWrapper">
         <img src="img/areYouReadyNotebook.png" alt="notebook" class="areYouReady__imgNotebook">
 
       </div>
     </div>
   </section>
+
+
+  <div id="modalForm" class="modal">
+      <span id="modalClose" class="modal__close">X</span>
+      <h3 class="modal__heading">Get your landing page now</h3>
+      <form action="" class="contactForm">
+        <label for="name" class="modal__label">Name:</label>
+        <input type="text" name="name" placeholder="Your Name" required class="modal__input"/>
+
+        <label for="email" class="modal__label">Email:</label>
+        <input type="email" name="email" placeholder="Your Email Address" required class="modal__input"/>
+
+        <button type="submit" class="modal__button">Send</button>
+      </form>
+    </div>
+    <div id="overlay"></div>
 
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
