@@ -15,27 +15,35 @@ $(document).ready(function(){
 		$( this ).addClass( 'active' );
 	});
 
-	$( '.slider__rhombs a' ).on( 'click', function () {
-		$( '.slider__rhombs' ).find( '.active' ).removeClass( 'active' );
-		$( this ).children( '' ).addClass( 'active' );
-	});
-});
+  // 	$( '.slider__rhombs a' ).on( 'click', function () {
+  // 		$( '.slider__rhombs' ).find( '.active' ).removeClass( 'active' );
+  // 		$( this ).children( '' ).addClass( 'active' );
+  // 	});
+  // });
 
-// добавление класса is-active
-$(document).ready(function(){
-	$( '.hamburger' ).click(function () {
-		$( this ).toggleClass('is-active');
-		$( '.header__menu ul' ).fadeToggle();
-	});
-});
+  // добавление класса is-active
+    $( '.hamburger' ).click(function () {
+      $( this ).toggleClass('is-active');
+      $( '.header__menu ul' ).fadeToggle();
+    });
 
-// иницилизация wow.js
-wow = new WOW(
-{
-	boxClass:     'wow',						// default
-	animatedmateClass: 'animated',	// default
-	offset:       0,								// default
-	mobile:       true,							// default      
-	live:         true							// default
-})
-wow.init();
+
+  // иницилизация wow.js
+  wow = new WOW(
+  {
+    boxClass:     'wow',						// default
+    animatedmateClass: 'animated',	// default
+    offset:       0,								// default
+    mobile:       true,							// default      
+    live:         true							// default
+  })
+  wow.init();
+
+    $('.slider').slick({
+      dots: true,
+      arrows: false,
+      draggable: false,
+      fade: true,
+      dotsClass: 'slider__rhombs'
+    });
+});

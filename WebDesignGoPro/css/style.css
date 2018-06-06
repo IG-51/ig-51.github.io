@@ -399,9 +399,15 @@ slider
 	text-align: center;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.28);
 	border-radius: 5px;
-	padding-top: 60px;
-	padding-bottom: 45px;
 }
+.slider__block {
+  padding-top: 70px;
+}
+
+.slick-slide:focus { 
+  outline: none; 
+}
+
 .slider__img {
 	width: 120px;
 	height: 120px;
@@ -418,33 +424,71 @@ slider
 	transform:rotate(-45deg);
 }
 .slider__block p {
-	margin: 0 140px;
-	padding-bottom: 30px;
+  margin: 0 140px;
+  padding-bottom: 30px;
 	font-weight: 400;
 	line-height: 32px;
 	letter-spacing: 1.2px;
 	color: #434343;
 }
+.slider__rhombs {
+  list-style: none;
+  padding-bottom: 50px;
+}
 .slider__rhombs li {
-	display: inline-block;
-	margin: 0 5px;
+   position: relative;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin: 0 5px;
+   padding: 0;
+   cursor: pointer;
 }
-.slider__icon {
-	font-size: 14px;
-	transform: rotate(45deg);
-	color: #26af5f;
-	opacity: 0.5;
-	-webkit-transition: .3s ease;
-	-o-transition: .3s ease;
-	transition: .3s ease;
+.slider__rhombs li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
 }
-.slider__icon.active {
-	color:#26af5f;
-	opacity: 1;
+
+.slider__rhombs li button:hover,
+.slider__rhombs li button:focus {
+  outline: none;
 }
-.slider__icon:hover {
-	color:#26af5f;
-	opacity: 0.8;
+
+.slider__rhombs li button:before {
+  font-family: FontAwesome;
+    content: "\f0c8";
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #26af5f;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.slider__rhombs li.slick-active button:before {
+  opacity: .75;
+  color: #26af5f;
 }
 
 /* ----- end slider ----- */
