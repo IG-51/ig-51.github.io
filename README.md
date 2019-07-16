@@ -1,5 +1,5 @@
 # ig-51.github.io
-Портфолио:
+Вёрстка:
 
 [WebDesignGoPro](https://ig-51.github.io/WebDesignGoPro/)
 
