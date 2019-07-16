@@ -1,5 +1,5 @@
 # ig-51.github.io
-Вёрстка и интеграция:
+Вёрстка и интеграция с cms:
 
 [filigranika.ru](https://filigranika.ru/)
 
