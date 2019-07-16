@@ -7,8 +7,8 @@
 
 [defence33.ru](https://defence33.ru/)
 
-[intelligentzia.ru](https://intelligentzia.ru/https://intelligentzia.ru)
+[intelligentzia.ru](https://intelligentzia.ru)
 
-[rpgagency.ru](https://rpgagency.ru/https://rpgagency.ru)
+[rpgagency.ru](https://rpgagency.ru)
 
-[intek-tool.ru](http://intek-tool.ru/http://intek-tool.ru)
+[intek-tool.ru](http://intek-tool.ru)
